@@ -1,0 +1,28 @@
+package questao1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class vetor {
+	public static void main(String[] args) {
+		
+		try(Scanner scanner = new Scanner(System.in)){
+			String[]nomes = new String [10];
+			
+			for (int i = 0; i < nomes.length; i++) {
+				System.out.println("Digite um nome:");
+				nomes[i] = scanner.nextLine();
+			}
+			
+			Arrays.sort(nomes);
+			
+			
+			System.out.println("\nNomes em ordem alfabética: ");
+			for (String nome : nomes) {
+				System.out.println(nome);
+			}
+		}
+		
+	}
+
+}
